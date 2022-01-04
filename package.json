@@ -1,6 +1,6 @@
 {
     "name": "react-view-pdf-mod",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "A simple and powerful PDF Viewer library for React.js",
     "homepage": "https://github.com/hiskuDN/react-view-pdf-mod",
     "author": {
@@ -8,7 +8,7 @@
     },
     "main": "lib/index.js",
     "module": "lib/index.js",
-    "types": "lib",
+    "types": "lib/index.d.ts",
     "keywords": [
         "react",
         "pdf-viewer",
