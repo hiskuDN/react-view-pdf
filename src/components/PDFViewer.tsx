@@ -101,7 +101,7 @@ export interface PDFViewerProps {
 }
 
 // const defaultWorkerUrl = 'https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js';
-const defaultWorkerUrl = 'https://unpkg.com/pdfjs-dist@2.10.377/legacy/build/pdf.worker.js';
+const defaultWorkerUrl = 'https://unpkg.com/pdfjs-dist@2.12.313/legacy/build/pdf.worker.js';
 /**
  * The `Document` is a wrapper to load PDFs and render all the pages
  */
@@ -112,7 +112,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = props => {
   const [loading, setLoading] = React.useState(true);
   const [pages, setPages] = React.useState<Array<PageType>>([]);
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [currentViewMode, setCurrentViewMode] = React.useState<PageViewMode>(PageViewMode.FIT_TO_WIDTH);
+  const [currentViewMode, setCurrentViewMode] = React.useState<PageViewMode>(PageViewMode.DEFAULT);
   const [currentScale, setCurrentScale] = React.useState(1);
   const [fullscreen, setFullscreen] = React.useState(false);
 
@@ -184,7 +184,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = props => {
     setLoading(true);
     setPages([]);
     setCurrentScale(1);
-    setCurrentViewMode(PageViewMode.DEFAULT);
+    setCurrentViewMode(PageViewMode.FIT_TO_WIDTH);
     setCurrentPage(1);
     if (!url) {
       return;
