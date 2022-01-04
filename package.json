@@ -1,55 +1,55 @@
 {
-  "name": "react-view-pdf",
-  "version": "1.0.0",
-  "description": "A simple and powerful PDF Viewer library for React.js",
-  "homepage": "https://github.com/ZEISS/react-view-pdf",
-  "author": {
-    "name": "ZEISS Digital Innovation Partners"
-  },
-  "main": "lib/index.js",
-  "module": "lib/index.js",
-  "types": "lib",
-  "keywords": [
-    "react",
-    "pdf-viewer",
-    "pdf reader",
-    "pdf viewer",
-    "pdf"
-  ],
-  "devDependencies": {
-    "@types/pdfjs-dist": "^2.10.377",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-no-null": "^1.0.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "husky": "^7.0.4",
-    "prettier": "^2.4.1",
-    "terser-webpack-plugin": "^5.2.5",
-    "ts-loader": "^9.2.6",
-    "typescript": "4.5.2",
-    "webpack": "^5.64.2",
-    "webpack-cli": "^4.9.1"
-  },
-  "peerDependencies": {
-    "precise-ui": "latest",
-    "react": "^16.8.3",
-    "styled-components": "^5.3.1"
-  },
-  "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
-    "lint": "eslint -f \"node_modules/eslint-friendly-formatter\" \"src/**/*.{ts,tsx}\"",
-    "prettier": "prettier --config prettier.config.js --write \"src/**/*.{ts,tsx}\"",
-    "prepush": "npm run prettier"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "intersection-observer": "^0.12.0",
-    "pdfjs-dist": "^2.10.377",
-    "use-debounce": "^7.0.1"
-  }
+    "name": "react-view-pdf-mod",
+    "version": "1.0.0",
+    "description": "A simple and powerful PDF Viewer library for React.js",
+    "homepage": "https://github.com/ZEISS/react-view-pdf",
+    "author": {
+        "name": "ZEISS Digital Innovation Partners"
+    },
+    "main": "lib/index.js",
+    "module": "lib/index.js",
+    "types": "lib",
+    "keywords": [
+        "react",
+        "pdf-viewer",
+        "pdf reader",
+        "pdf viewer",
+        "pdf"
+    ],
+    "devDependencies": {
+        "@types/pdfjs-dist": "^2.10.377",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "@typescript-eslint/parser": "^5.4.0",
+        "eslint": "^8.3.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-friendly-formatter": "^4.0.1",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.27.1",
+        "husky": "^7.0.4",
+        "prettier": "^2.4.1",
+        "terser-webpack-plugin": "^5.2.5",
+        "ts-loader": "^9.2.6",
+        "typescript": "4.5.2",
+        "webpack": "^5.64.2",
+        "webpack-cli": "^4.9.1"
+    },
+    "peerDependencies": {
+        "precise-ui": "latest",
+        "react": "^16.8.3",
+        "styled-components": "^5.3.1"
+    },
+    "scripts": {
+        "start": "webpack-dev-server",
+        "build": "webpack",
+        "lint": "eslint -f \"node_modules/eslint-friendly-formatter\" \"src/**/*.{ts,tsx}\"",
+        "prettier": "prettier --config prettier.config.js --write \"src/**/*.{ts,tsx}\"",
+        "prepush": "npm run prettier"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "intersection-observer": "^0.12.0",
+        "pdfjs-dist": "^2.10.377",
+        "use-debounce": "^7.0.1"
+    }
 }
