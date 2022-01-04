@@ -112,7 +112,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = props => {
   const [loading, setLoading] = React.useState(true);
   const [pages, setPages] = React.useState<Array<PageType>>([]);
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [currentViewMode, setCurrentViewMode] = React.useState<PageViewMode>(PageViewMode.DEFAULT);
+  const [currentViewMode, setCurrentViewMode] = React.useState<PageViewMode>(PageViewMode.FIT_TO_WIDTH);
   const [currentScale, setCurrentScale] = React.useState(1);
   const [fullscreen, setFullscreen] = React.useState(false);
 
