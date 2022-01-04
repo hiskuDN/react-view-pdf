@@ -7,7 +7,7 @@ The purpose of this library is to provide a React component that works as a PDF 
 The library can be installed via the following commands:
 
 ```sh
-npm i --save-dev react-view-pdf
+npm i --save-dev react-view-pdf-mod
 ```
 
 Because this library uses components from `precise-ui`, it is necessary to add it as a dependency to your project:
@@ -19,7 +19,7 @@ npm i precise-ui
 Then, simply import the component like below:
 
 ```js
-import { PDFViewer } from 'react-view-pdf';
+import { PDFViewer } from 'react-view-pdf-mod';
 
 <PDFViewer url="http://www.africau.edu/images/default/sample.pdf" />
 
