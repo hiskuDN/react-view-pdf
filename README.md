@@ -35,3 +35,8 @@ Feel free to contribute to it or open issues in case of bugs.
 1. Remove dependency on `precise-ui`.
 2. Allow selection of texts.
 3. Add built-in download button.
+
+
+## Updates
+
+Resolve low resolution of PDFs on high DPI mobile devices issue

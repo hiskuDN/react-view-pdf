@@ -65,21 +65,32 @@ const PDFViewerPageInner: React.FC<PDFViewerPageProps> = props => {
       if (!canvasEle) {
         return;
       }
+
+      const devicePixelRatio = window.devicePixelRatio || 1
+
       const viewport = page.getViewport({ scale });
-      canvasEle.height = viewport.height;
-      canvasEle.width = viewport.width;
+      canvasEle.height = Math.floor(viewport.height * devicePixelRatio);
+      canvasEle.width = Math.floor(viewport.width * devicePixelRatio);
+      canvasEle.style.width = Math.floor(viewport.width) + "px";
+      canvasEle.style.height = Math.floor(viewport.height) + "px";
 
       const canvasContext = canvasEle.getContext('2d', { alpha: false }) as CanvasRenderingContext2D;
+
+      const transform = devicePixelRatio !== 1
+        ? [devicePixelRatio, 0, 0, devicePixelRatio, 0, 0]
+        : null
 
       renderTask.current = page.render({
         canvasContext,
         viewport,
-      });
+        transform
+      })
+
       renderTask.current.promise.then(
         // eslint-disable-next-line @typescript-eslint/no-empty-function
-        () => {},
+        () => { },
         // eslint-disable-next-line @typescript-eslint/no-empty-function
-        () => {},
+        () => { },
       );
     }
   }

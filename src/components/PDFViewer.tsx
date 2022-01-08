@@ -183,6 +183,7 @@ export const PDFViewer: React.FC<PDFViewerProps> = props => {
     // Reset all values for the new document
     setLoading(true);
     setPages([]);
+    // change scale based on the canvas width    
     setCurrentScale(1);
     setCurrentViewMode(PageViewMode.FIT_TO_WIDTH);
     setCurrentPage(1);
